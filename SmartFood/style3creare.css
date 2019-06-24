@@ -1,0 +1,300 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(poze/4.jpg) no-repeat;
+  background-size: cover;
+
+}
+.login-box{
+  width: 30%;
+  position: absolute;
+  top: 54%;
+  left: 49%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.login-box h1{
+  float: left;
+  font-size: 250%;
+  border-bottom: 6px solid white;
+  margin-bottom: 5%;
+  padding: 1% 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20%;
+  padding: 2% 0;
+  margin: 2% 0;
+  border-bottom: 1px solid white;
+}
+.textbox i{
+  width: 26%;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 650%;
+  width: 80%;
+  float: left;
+  margin: 0 10%;
+}
+
+
+
+.btn{
+  width: 100%;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 2%;
+  font-size: 140%;
+  cursor: pointer;
+  margin: 2% 0;
+}
+
+::placeholder{
+  color: white;
+}
+
+.creaza-cont{
+ 
+  position: absolute;
+  top: 85%;
+  left: 27%;
+  width: 50%;
+}
+
+.creaza-cont a{
+  color: white;
+  font-size: 110%;
+}
+
+.sgv1{
+  fill: white;
+  position: absolute;
+}
+
+.sgv2{
+  fill: white;
+  position: absolute;
+  left: 0%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.log-in{
+  position: absolute;
+  bottom: 15%;
+  margin-left: 7%;
+  text-decoration: none;
+  color: black;
+  font-family: F;
+  font-size: 110%;
+}
+
+.svg-icon3{
+  position: absolute;
+  margin-left: -15%;
+  top: 1%;
+  fill: #787878;
+
+}
+
+.svg-icon3:hover{
+  fill: #aaaaaa;
+}
+
+.svg-icon4{
+  position: absolute;
+  margin-left: 53%;
+  top: 20%;
+  fill: #787878;
+  width: 50%;
+  height: 50%;
+  fill: black;
+}
+
+.svg-icon4:hover{
+  fill: #aaaaaa;
+}
+
+.Logo{
+  font-weight: lighter;
+  font-size:310%; 
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  font-family: Ales;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Ales;
+  src:url('Anastik.ttf');
+}
+
+@font-face{
+  font-family: Font;
+  src:url('spinwerad.ttf');
+}
+
+@font-face{
+  font-family: F;
+  src:url('Chapaza.ttf');
+}
+
+@font-face{
+  font-family: Fontm;
+  src:url('RemachineScript_Personal_Use.ttf');
+}
+
+.clasa1{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cautaReteta2{
+  bottom: 35%;
+  margin-left: 60%;
+  height: 30%;
+  width: 35%;
+  position: absolute;
+  background-color: rgb(198, 202, 210,0.20);
+  border: none;
+}
+
+
+input.cautaReteta2::placeholder{
+  color: black;
+  font-family: Font;
+  letter-spacing: 2px;
+  text-align:center;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+ 
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.container-meniu{
+  position: relative;
+  text-align: center;
+}
+
+
+.poza-logo2 img{
+  height: 35%;
+ width: 70%;
+ 
+}
+
+
+.meniu-scris1
+{
+  position: absolute;
+  top: 35%;
+  left: 19%;
+  font-family: Ales;
+  font-weight: normal;
+  font-size:200%; 
+  color: black;
+}
+
+
+.meniu-scris2
+{
+  font-size: 250%;
+  color: white;
+  margin-bottom: 15%;
+  margin-top: 15%;
+  font-family: Fontm;
+}
+
+.meniu-scris3
+{
+  font-size: 250%;
+  color: white;
+  margin-bottom: 15%;
+  font-family: Fontm;
+}
+
+.meniu-scris4
+{
+  font-size: 250%;
+  color: white;
+  margin-bottom: 15%;
+  font-family: Fontm;
+}
+
+.meniu-scris5
+{
+  font-size: 250%;
+  color: white;
+   margin-bottom: 15%;
+   font-family: Fontm;
+}
+
+
+
+.email-sgv{
+  fill: white;
+  position: absolute;
+  right: 95%;
+}
+
+.afisaremesaj{
+  margin-left: 20%;
+  position: absolute;
+}

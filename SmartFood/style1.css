@@ -1,0 +1,585 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+@font-face {
+  font-family: Ales;
+  src:url('Anastik.ttf');
+}
+
+@font-face{
+  font-family: Font;
+  src:url('spinwerad.ttf');
+}
+
+@font-face{
+  font-family: F;
+  src:url('Chapaza.ttf');
+}
+
+@font-face{
+  font-family: Font meniu;
+  src:url('RemachineScript_Personal_Use.ttf');
+}
+
+.Logo{
+  font-weight: lighter;
+  font-size:310%; 
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  font-family: Ales;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.p img{
+  
+  height: 100%; 
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 1%;
+
+  
+  
+}
+
+.cont{
+  position: relative;
+  height: 100%; 
+}
+
+.Gaseste{
+  position: absolute;
+  top: 35%;
+  font-size: 250%;
+  left: 34%;
+  font-family: Font;
+ 
+  color: black;
+}
+
+.cautaReteta{
+  position: absolute;
+  top: 46%;
+  left: 32%;
+  width: 30%;
+  height: 10%;
+
+  background-color: rgba(255,255,255,0.55);
+  border: none;
+ 
+  font-size: 150%;
+
+}
+
+.cautaReteta input{
+  padding-left: 25%;
+  font-family: Font;
+  font-weight: bold;
+  
+  float: center;
+}
+
+
+
+.svg-icon{
+  height:8%;
+  width: 8%;
+  position: absolute;
+  left: 26%;
+  top: 47%;
+  fill: black;
+}
+
+.svg-icon:hover{
+  fill: #aaaaaa;
+}
+
+.ultimele-retete{
+  font-family: F;
+  font-size: 200%;
+  padding-top: 2%;
+  padding-left: 40%;
+  
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 2%;
+  grid-auto-rows: 1fr;
+  grid-gap: 10%;
+}
+
+.grid-item {
+ 
+  padding: 3%;
+  font-size: 180%;
+  text-align: center;
+  font-family: Font;
+  width: 80%;
+  
+
+}
+
+.scris1{
+  color: #4d4d4d;
+
+}
+
+
+.poza-reteta1{
+  max-width: 260px; 
+  max-height: 220px;
+  
+}
+
+.scris2{
+  color:#4d4d4d;
+
+}
+
+.cautareAvansata{
+  position: absolute;
+  top: 59%;
+  left: 40%;
+
+}
+
+.cautareAvansata a{
+  color: black;
+  font-family: Font;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color:#333333;
+  font-size: 100%;
+}
+
+.cautareAvansata a:hover{
+  text-decoration: underline;
+
+}
+
+
+#nav-container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+}
+#nav-container .bg {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  height: calc(100% - 70px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+ 
+}
+#nav-container:focus-within .bg {
+  visibility: visible;
+  opacity: .6;
+}
+#nav-container * {
+  visibility: visible;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  height: 70px;
+  width: 30px;
+  cursor: pointer;
+  pointer-events: auto;
+  margin-left: 25px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.icon-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #aaa;
+  transition: .3s;
+}
+.icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+
+#nav-container:focus-within .button {
+  pointer-events: none;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(1) {
+  transform: translate3d(0,8px,0) rotate(45deg);
+}
+#nav-container:focus-within .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(3) {
+  transform: translate3d(0,-8px,0) rotate(-45deg);
+}
+
+#nav-content {
+  margin-top: 0px;
+  padding: 20px;
+  height: : 110%;
+  max-width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 70px);
+  background: #1c1c1c;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transform: translateX(-100%);
+  transition: transform .3s;
+  will-change: transform;
+  contain: paint;
+
+ 
+    padding-top: 2.8125rem;
+    width: 20.125rem;
+}
+
+#nav-content ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-content div
+{
+  font-weight: lighter;
+  font-size:200%; 
+  position: absolute;
+  color: white;
+  top: 10%;
+  left: 50%;
+  font-family: Ales;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#nav-content li a {
+  padding: 5px 5px;
+  display: block;
+  text-transform: uppercase;
+  transition: color .1s;
+  color: white;
+  padding-top: 30%;
+  font-size: 130%;
+}
+
+#nav-content li a:hover {
+  color: #BF7497;
+}
+
+#nav-content li:not(.small) + .small {
+  margin-top: auto;
+}
+
+.small {
+  display: flex;
+  align-self: center;
+}
+
+.small a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888;
+}
+.small a + a {
+  margin-left: 15px;
+}
+
+#nav-container:focus-within #nav-content {
+  transform: none;
+}
+
+.clasa1{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer{
+    position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    background-image: url(poze/poza-index1.jpg);
+   margin-top: 5%;
+   color: white;
+   background-size: 100%;
+   background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.clasa2{
+  font-family: Ales;
+  color: black;
+  margin-left: 10%;
+  top: 45%;
+  position: absolute;
+  font-size: 265%;
+  margin-top: 1%;
+}
+.poza-logo img{
+ height: 20%;
+ width: 20%;
+ margin-top: 5%;
+ margin-left: 38%;
+ position: relative;
+}
+
+.poza-logo p{
+  margin-left: 42%;
+}
+
+.clasa3{
+  margin-left: 50%;
+  top: 25%;
+  position: absolute;
+  font-family: Font;
+  color: black;
+}
+
+.clasa4{
+  margin-left: 50%;
+  top: 45%;
+  position: absolute;
+  font-family: Font;
+  color: black;
+}
+
+.clasa5{
+  margin-left: 50%;
+  top: 65%;
+  position: absolute;
+  font-family: Font;
+  color: black;
+}
+
+.cautaReteta2{
+  bottom: 35%;
+  margin-left: 60%;
+  height: 30%;
+  width: 35%;
+  position: absolute;
+  background-color: rgb(198, 202, 210,0.20);
+  border: none;
+  font-family: F;
+
+}
+
+
+
+
+
+::placeholder{
+  color: black;
+  font-family: Font;
+  letter-spacing: 2px;
+  text-align:center;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+ 
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.container-meniu{
+  position: relative;
+  text-align: center;
+}
+
+.poza-logo2 img{
+  height: 35%;
+ width: 70%;
+ 
+}
+
+.meniu-scris1
+{
+  position: absolute;
+  top: 35%;
+  left: 19%;
+  font-family: Ales;
+  font-weight: normal;
+  font-size:200%; 
+  color: black;
+}
+
+.meniu-scris2
+{
+  font-size: 250%;
+  color: white;
+  margin-bottom: 15%;
+  margin-top: 15%;
+  font-family: Font meniu;
+}
+
+.meniu-scris3
+{
+  font-size: 250%;
+  color: white;
+  margin-bottom: 15%;
+  font-family: Font meniu;
+}
+
+.meniu-scris4
+{
+  font-size: 250%;
+  color: white;
+  margin-bottom: 15%;
+  font-family: Font meniu;
+}
+
+.meniu-scris5
+{
+  font-size: 250%;
+  color: white;
+   margin-bottom: 15%;
+   font-family: Font meniu;
+}
+
+
+.log-in{
+  position: absolute;
+  bottom: 15%;
+  margin-left: 7%;
+  text-decoration: none;
+  color: black;
+  font-family: F;
+  font-size: 110%;
+}
+
+
+
+
+.svg-icon3{
+  position: absolute;
+  margin-left: -15%;
+  top: 1%;
+  fill: #787878;
+
+}
+
+.svg-icon3:hover{
+  fill: #aaaaaa;
+}
+
+.svg-icon4{
+  position: absolute;
+  margin-left: 53%;
+  top: 20%;
+  fill: #787878;
+  width: 50%;
+  height: 50%;
+  fill: black;
+}
+
+.svg-icon4:hover{
+  fill: #aaaaaa;
+}
+
+.svg-icon2{
+  top: 59%;
+  position: absolute;
+  left: 55%;
+}

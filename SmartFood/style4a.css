@@ -1,0 +1,364 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-size: 1520px 775px;
+  background-color: white;
+}
+
+
+::placeholder{
+  color: white;
+}
+
+@font-face {
+  font-family: A;
+  src:url('Renner_ 400 Book.ttf');
+}
+
+@font-face {
+  font-family: Ales;
+  src:url('Anastik.ttf');
+}
+
+@font-face{
+  font-family: Font;
+  src:url('spinwerad.ttf');
+}
+
+@font-face{
+  font-family: F;
+  src:url('Chapaza.ttf');
+}
+
+.navbar {
+  overflow: hidden;
+  background-image: url("poze/black-bean-close-up-cooked-1640774 9.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30%;
+}
+
+
+
+
+.svg-icon4{
+  position: absolute;
+  margin-left: 38%;
+  top: 31%;
+  fill: #787878;
+  width: 20%;
+  height: 20%;
+  fill: black;
+}
+
+.svg-icon4:hover{
+  fill: #aaaaaa;
+}
+
+.Logo{
+  font-weight: lighter;
+  font-size:480%; 
+  position: absolute;
+  top: 42%;
+  left: 30%;
+  font-family: Ales;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+@font-face {
+  font-family: Ales;
+  src:url('Anastik.ttf');
+}
+
+@font-face{
+  font-family: Font;
+  src:url('spinwerad.ttf');
+}
+
+@font-face{
+  font-family: F;
+  src:url('Chapaza.ttf');
+}
+
+.clasa1{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cautaReteta2{
+  bottom: 28%;
+  margin-left: 39%;
+  height: 42%;
+  width: 50%;
+  position: absolute;
+  background-color: rgba(255,255,255,0.55);
+  border: none;
+  font-family: Font;
+  
+}
+
+input.cautaReteta2{
+  color: black;
+  font-family: Font;
+  letter-spacing: 2px;
+  
+  
+}
+
+
+input.cautaReteta2::placeholder{
+  color: black;
+  font-family: Font;
+  letter-spacing: 2px;
+  text-align:center;
+  
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.ceva{
+  margin-top: 13%;
+  width: 100%;
+  height: 20%;
+  position: fixed;
+}
+
+.ceva ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  height: 2.875rem;
+
+}
+
+.ceva li {
+  float: left;
+  margin-left: 2%;
+  padding-left: 2%;
+  font-family: F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90%;
+
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 11px;
+  text-decoration: none;
+  border: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+li a:hover,.dropdown:hover .dropbtn{
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 17%;
+  height: 250%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 37%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.a{
+  top: 150%;
+  position: relative;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 10%;
+    margin-bottom: 10%;
+    cursor: pointer;
+    font-size: 120%;
+    margin-left: 5%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 5%;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 9%;
+    background-color: #eee;
+    margin-top: 1%;
+    border: 1px solid black;
+  }
+  
+  .container:hover input~.checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked~.checkmark {
+    /*background-color: #2196F3;*/
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked~.checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 30%;
+    top: 1%;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 16%;
+  height: 270%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content1 a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content1 {
+  display: block;
+}
+
+
+
+
+.afisare-retete{
+  top: 50%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  width: 94%
+
+}
+
+
+
+ul.products li {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+     border: 1px solid black;
+     
+     height: 300px;
+     margin: 0 45px 25px 0;
+}
+
+ul.products li img{
+  max-width: 200px; 
+  height: 150px;
+  margin-left: 4%;
+}
+
+.products{
+ position: absolute;
+ top: 30%;
+  left: 5%;
+}
+
+
+.products h4{
+  font-family: F;
+  color: black;
+  font-size: 110%;
+}
+
+.products p{
+  font-family: F;
+  font-size: 100%;
+  margin-left: 30%;
+  margin-top: -5%;
+}
+
+.products h5{
+  font-family: F;
+  font-size: 100%;
+}
+
+
+  
+  

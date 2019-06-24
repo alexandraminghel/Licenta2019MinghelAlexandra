@@ -1,0 +1,673 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-size: 1520px 775px;
+  background-color: white;
+}
+
+ul{
+  margin-top: -35%;
+  width: 30%;
+}
+
+br{
+  line-height: 250%;
+}
+
+li{
+  padding-bottom: 5%;
+  font-family: Font scris;
+   font-size: 120%;
+
+}
+
+::placeholder{
+  color: white;
+}
+
+@font-face {
+  font-family: A;
+  src:url('Renner_ 400 Book.ttf');
+}
+
+@font-face {
+  font-family: Ales;
+  src:url('Anastik.ttf');
+}
+
+@font-face{
+  font-family: Font;
+  src:url('spinwerad.ttf');
+}
+
+@font-face{
+  font-family: F;
+  src:url('Chapaza.ttf');
+}
+
+@font-face {
+  font-family: Font scris;
+  src:url('Amurg-Regular.otf');
+}
+
+@font-face{
+  font-family: Font reteta;
+  src:url('TheanoDidot-Regular.ttf');
+}
+
+.navbar {
+  overflow: hidden;
+  background-image: url("poze/black-bean-close-up-cooked-1640774 9.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20%;
+}
+
+
+
+
+.svg-icon4{
+  position: absolute;
+  margin-left: 28%;
+  top: 21%;
+  fill: #787878;
+  width: 40%;
+  height: 40%;
+  fill: black;
+}
+
+.svg-icon4:hover{
+  fill: #aaaaaa;
+}
+
+.Logo{
+  font-weight: lighter;
+  font-size:480%; 
+  position: absolute;
+  top: 42%;
+  left: 30%;
+  font-family: Ales;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+@font-face {
+  font-family: Ales;
+  src:url('Anastik.ttf');
+}
+
+@font-face{
+  font-family: Font;
+  src:url('spinwerad.ttf');
+}
+
+@font-face{
+  font-family: F;
+  src:url('Chapaza.ttf');
+}
+
+.clasa1{
+  text-decoration: none;
+  color: inherit;
+}
+
+.cautaReteta2{
+  bottom: 28%;
+  margin-left: 39%;
+  height: 42%;
+  width: 50%;
+  position: absolute;
+  background-color: rgba(255,255,255,0.55);
+  border: none;
+}
+
+
+input.cautaReteta2{
+  color: black;
+  font-family: Font;
+  letter-spacing: 2px;
+  
+}
+
+input.cautaReteta2::placeholder{
+  color: black;
+  font-family: Font;
+  letter-spacing: 2px;
+  text-align:center;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.ceva{
+  margin-top: 13%;
+  width: 100%;
+  height: 20%;
+  position: fixed;
+}
+
+.ceva ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  height: 2.875rem;
+
+}
+
+.ceva li {
+  float: left;
+  margin-left: 2%;
+  padding-left: 2%;
+  font-family: F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90%;
+
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 11px;
+  text-decoration: none;
+  border: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+li a:hover,.dropdown:hover .dropbtn{
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 17%;
+  height: 250%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 37%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.a{
+  top: 150%;
+  position: relative;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 10%;
+    margin-bottom: 10%;
+    cursor: pointer;
+    font-size: 120%;
+    margin-left: 5%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 5%;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 9%;
+    background-color: #eee;
+    margin-top: 1%;
+    border: 1px solid black;
+  }
+  
+  .container:hover input~.checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked~.checkmark {
+    /*background-color: #2196F3;*/
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked~.checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 30%;
+    top: 1%;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 16%;
+  height: 270%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content1 a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content1 {
+  display: block;
+}
+
+
+
+
+.afisare-retete{
+  top: 50%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  width: 94%
+
+}
+
+
+
+ul.products li {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+     border: 1px solid black;
+     font-size: 90%;
+     height: 300px;
+     margin: 0 10px 0 0;
+}
+
+ul.products li img{
+  max-width: 200px; 
+  height: 150px;
+  margin-left: 4%;
+}
+
+.products{
+ position: absolute;
+ top: 30%;
+ 
+}
+
+
+.continut{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  height: 100%;
+}
+
+.retetaTitlu{
+  top: 5%;
+  left: 6%;
+  width: 85%;
+  height: 25%;
+  position: relative;
+  border: 2px solid #8BC13F;
+}
+
+.titlu{
+  position: relative;
+  top: 3%;
+  left: 2%;
+  width: 40%;
+  height: 80%;
+}
+
+.titlu h4{
+    position: relative;
+    top: 10%;
+}
+
+.favorit{
+  position: relative;
+  bottom: 60%;
+  left: 50%;
+  width: 20%;
+  height: 30%;
+
+}
+
+
+.meniu{
+  position: relative;
+  bottom: 88%;
+  left: 65%;
+  width: 20%;
+  height: 30%;
+}
+
+  
+.imagine1{
+    position: relative;
+    left: 50%;
+    width: 40%;
+}
+
+.imagine{
+  height: 120%;
+  width: 120%;
+}
+
+.boxReteta{
+  position: relative;
+  top: 10%;
+  width: 80%;
+  
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin-left: 8%;
+  margin-bottom: 5%;
+}
+
+.boxRetetaContinut{
+  border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+}
+
+.ingredienteInfo h2{
+  border-bottom: 5px solid #ccc;
+  width: 20%;
+  display: flex;
+
+}
+
+.listaIngrediente{
+  width: 110%;
+}
+
+.modPreparare{
+  position: relative;
+  
+ 
+
+}
+
+.modPreparare h2{
+  border-bottom: 5px solid #ccc;
+  width: 40%;
+  
+}
+
+.modPreparare div{
+  font-family: Font reteta;
+  font-weight: 590;
+  font-size: 120%;
+}
+
+.buton1{
+  border: none;
+  background-color: transparent;
+  outline: 0;
+
+}
+
+.buton2{
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  
+}
+
+.butonMeniu{
+  border: none;
+  background-color: transparent;
+  outline: 0;
+}
+
+.dropdown-contentASCUNS {
+  
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  width: 120%;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 190%;
+  right: 20%;
+}
+
+
+.containerI {
+    display: block;
+    position: relative;
+    padding-left: 15%;
+  
+    cursor: pointer;
+    font-size: 130%;
+    margin-left: 1%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 4%;
+    
+    width: 90%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+  
+  .containerI input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmarkI {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    height: 70%;
+    width: 6%;
+    background-color: #eee;
+    margin-top: 1%;
+    border: 1px solid black;
+  }
+  
+  .containerI:hover input~.checkmarkI {
+    background-color: #ccc;
+  }
+  
+  .containerI input:checked~.checkmarkI {
+    
+  }
+  
+  .checkmarkI:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .containerI input:checked~.checkmarkI:after {
+    display: block;
+  }
+  
+  .containerI .checkmarkI:after {
+    left: 30%;
+    top: 1%;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+.Introducere
+{
+  position: relative;
+  margin-left: 5%;
+  margin-top: 5%;
+  color: black;
+  height: 60%;
+  font-size: 100%;
+}
+
+input.Introducere::placeholder{
+  color: black;
+  font-family: Font;
+  
+  text-align:center;
+}
+
+.butonIntroducere{
+  position: absolute;
+  
+  left: 78%;
+  margin-top: 5%;
+   background-color: Transparent;
+    background-repeat:no-repeat;
+    border:none;
+    outline: none;
+
+}
+
+.butonIntroducere:hover{
+  fill: #aaaaaa;
+}
+
+.containerBtn{
+  position: relative;
+  left: 85%;
+  font-size: 150%;
+  padding-bottom: -2%;
+}
+
+
+.containerIIIII{
+  position: relative;
+  left: 30%;
+
+  
+}
+
+.containerIIIII button{
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border:none;
+    outline: none;
+    font-size: 110%;
+    font-family: F;
+}
+
+.dispare{
+  visibility: hidden;
+}
+
+.butonAdaugare{
+border: none;
+  background-color: transparent;
+  outline: 0;
+  margin-bottom: 2%;
+  padding-top: 7%;
+  padding-left: 6%;
+}
+
+.denumireMeniu{
+  position: relative;
+  margin-left: 20%;
+  margin-top: -11%;
+  margin-bottom: 5%;
+}
+
+.invizibil{
+  visibility: hidden;
+}
+
+
+.butonFav{
+  left: -9%;
+  position: relative;
+  font-family: F;
+  margin-top: -15%;
+  margin-bottom: 5%;
+}
+
+.butonMeniuri{
+  position: relative;
+  font-family: F;
+  margin-bottom: 3%;
+  margin-top: -1%;
+}
